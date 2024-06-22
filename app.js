@@ -1,17 +1,15 @@
 const express = require('express');
 const app = express();
-const path = require('path');
 
-// Set up the EJS templating engine
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
 
-// Define routes
+//By default, Express looks for a views directory in the root of your project for your view templates.
+app.set('views', './views');
+
 app.get('/', (req, res) => {
-    res.render('index');
+  res.render('index');
 });
 
-// Start the server
 app.listen(3000, () => {
-    console.log('Server is running on http://localhost:3000');
+  console.log('Server is running on http://localhost:3000');
 });

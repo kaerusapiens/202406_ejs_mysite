@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home Page</title>
+  <meta charset="UTF-8">
+  <title>My Website</title>
 </head>
 <body>
-    <% include partials/header %>
+  <%- include('partials/header') %>
 
-    <main>
-        <h2>Welcome to the Home Page</h2>
-        <p>This is the main content of the page.</p>
-    </main>
+  <main>
+    <h2>This is the main content area.</h2>
+    <p>Here is some text about my website.</p>
+  </main>
 
-    <% include partials/footer %>
+  <%- include('partials/footer') %>
 </body>
 </html>
